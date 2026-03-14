@@ -26,14 +26,14 @@ for(let op of options){
 next.addEventListener('click',()=>{
     let source = parseInt(screen.src.split('product-detail-')[1].split('.')[0]);
     let i= source+1>3? 1 :source+1;
-    screen.src=`../images/product-detail-0${i}.jpg`;
+    screen.src=`product-detail-0${i}.jpg`;
     
 })
 
 prev.addEventListener('click',()=>{
     let source = parseInt(screen.src.split('product-detail-')[1].split('.')[0]);
     let i= source-1<1? 3 :source-1;
-    screen.src=`../images/product-detail-0${i}.jpg`;
+    screen.src=`product-detail-0${i}.jpg`;
 })
 
 let inc = document.getElementById("btn-inc");
